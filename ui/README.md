@@ -26,3 +26,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 4. Services: Services in Angular are used to share data and functionality across different components in an application. Services are typically used to retrieve data from a backend API or to perform other operations that are not related to a specific component.
 5. Dependency Injection: Angular uses dependency injection (DI) to manage the dependencies of an application. DI is a design pattern that allows developers to create loosely coupled components that can be easily maintained and tested.
 6. Routing: Angular provides a powerful routing module that allows developers to create routes for their application. Routes are defined in the app-routing.module.ts file and can be used to navigate between different views of an application.
+
+
+## Screenshots of the frontend web application
+
