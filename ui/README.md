@@ -31,8 +31,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Screenshots of the frontend web application
 
 ![Screenshot (167)](https://user-images.githubusercontent.com/82100023/230634312-464785d8-12e6-4752-9a1c-a74e64b18813.png)
+
+
 ![Screenshot (168)](https://user-images.githubusercontent.com/82100023/230634347-1ffbdda7-9147-467d-84de-ab646b722b31.png)
+
+
 ![Screenshot (169)](https://user-images.githubusercontent.com/82100023/230634365-39c17627-eed8-424a-ba83-46ae62fb7f15.png)
+
+
 ![Screenshot (170)](https://user-images.githubusercontent.com/82100023/230634380-a03cdaed-670b-4256-8618-353e50c4e84f.png)
 
 
