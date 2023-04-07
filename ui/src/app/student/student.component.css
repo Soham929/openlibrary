@@ -1,0 +1,85 @@
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+body{
+    background-color: aquamarine;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 0.5px solid #5a80e7;
+    box-sizing: content-box;
+}
+
+tr:nth-child(even) {
+    background-color: #b3e5fc;
+}
+
+tr:hover {
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+th {
+    background-color: #2196f3;
+    color: #272e34;
+    border: 2px solid #20407a;
+    box-sizing: content-box;
+}
+
+
+.button {
+    background-color: #379adb;
+    /* Blue */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    font-family: Google Sans;
+}
+
+.smallButton {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .smallButton:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+  
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    color: rgb(32, 78, 78);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

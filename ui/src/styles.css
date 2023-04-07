@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    /* font-family: 'Lato', serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}    
+
+  /* form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input[type="number"]::-webkit-inner-spin-button,
+  form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  form input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0077B5;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #004C8C;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  } */
+  
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  form input[type="number"]::-webkit-inner-spin-button,
+  form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  form input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="number"]:focus {
+    outline: none;
+    background-color: #e8e8e8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0077B5;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #004C8C;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  form input[type="text"]::placeholder,
+  form input[type="number"]::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  form input[type="text"]:hover::placeholder,
+  form input[type="number"]:hover::placeholder {
+    color: #666;
+  }
+  
+  form input[type="text"]:focus::placeholder,
+  form input[type="number"]:focus::placeholder {
+    color: transparent;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #0077B5;
+    color: #80abc0;
+    text-decoration: underline;
+  }
+  

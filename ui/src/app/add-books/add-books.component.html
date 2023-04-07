@@ -1,0 +1,46 @@
+<div style="padding-left: 100px;">
+    <h1 class="heading">Add Books</h1>
+
+<form [formGroup]="booksForm" (ngSubmit)="saveBook()">
+
+<label>ID</label>
+<input type="text" formControlName="id" placeholder="Enter the id of new book">
+
+<label>Name</label>
+<input type="text" formControlName="name" placeholder="Enter the name of new book">
+
+<label>Author</label>
+<input type="text" formControlName="author" placeholder="Enter the Author of new book">
+
+<label>ISBN</label>
+<input type="text" formControlName="isbn" placeholder="Enter the ISBN of new book">
+
+<label>Publication Date</label>
+<input type="text" formControlName="publicationDate" placeholder="Enter the Publication Date of new book">
+
+<label>Publisher</label>
+<input type="text" formControlName="publisher" placeholder="Enter the Publisher of new book">
+
+<label>No Of Copies</label>
+<input type="number" formControlName="copies" placeholder="Enter the Copies of new book">
+
+<label>Genre</label>
+<input type="text" formControlName="genre" placeholder="Enter the Genre of new book">
+
+<label>Subgenre</label>
+<input type="text" formControlName="subgenre" placeholder="Enter the Subgenre of new book">
+
+<label>Category</label>
+<input type="text" formControlName="category" placeholder="Enter the Category of new book">
+
+
+<div *ngIf="booksForm.valid">
+    <input type="submit" value="Save Book">
+
+</div>
+
+</form>
+</div>
+
+<h3> Form status: {{booksForm.valid}}</h3>
+<h3> Form json: {{booksForm.value | json}}</h3>

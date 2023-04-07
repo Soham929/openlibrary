@@ -1,0 +1,32 @@
+
+<h1 class="fade-in">{{title}}</h1>
+
+<div style= "margin: 20px; float:right">
+  <button class="button" (click)="addStudents()"> Add Students</button>
+</div>
+<table class="center">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>DEPARTMENT</th>
+      <th>ROLL NUMBER</th>
+      <th>BIRTHDATE</th>
+      <th>MOBILE NUMBER</th>
+      <th>ACTIONS</th>
+    </tr>
+  </thead>  
+  <tbody *ngIf="students.length>0">
+    <tr *ngFor="let stu of students">
+      <td>{{stu.id}}</td>
+      <td>{{stu.name}}</td>
+      <td>{{stu.department}}</td>
+      <td>{{stu.rollnumber}}</td>
+      <td>{{stu.birthdate}}</td>
+      <td>{{stu.mobilenumber}}</td>
+      <td>
+        <button class='smallButton' (click)="deleteStudents(stu.id)">Delete</button>
+    </td>
+    </tr>
+  </tbody>
+ </table>

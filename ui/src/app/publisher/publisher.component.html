@@ -1,0 +1,35 @@
+<body>
+    
+    <h1 class="fade-in" >{{title}}</h1>
+    
+    <h2 *ngIf="publishers.length<1">No Data</h2>
+    
+    <div style= "margin: 20px; float:right">
+        <button class="button" (click)="addPublishers()"> Add Publisher</button>
+    </div>
+    
+    <table *ngIf="publishers.length>0" class="center" >
+        <thead>
+            <tr>
+       <th>ID</th>
+      <th>NAME</th>
+      <th>ADDRESS</th>
+      <th>PHONE</th>
+      <th>EMAIL</th>
+      <th>ACTIONS</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let pub of publishers">
+        <td>{{pub.id}}</td>
+        <td>{{pub.name}}</td>
+        <td>{{pub.address}}</td>
+        <td>{{pub.phone}}</td>
+        <td>{{pub.email}}</td>
+        <td>
+            <button class='smallButton' (click)="deletePublisher(pub.id)">Delete</button>
+        </td>
+    </tr>
+</tbody>  
+</table>
+</body>

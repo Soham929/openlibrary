@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="form-group">
+        <h1 class="fade-in" >Enter Book ID:</h1>
+        <input type="text" id="bookId" [(ngModel)]="bookId" class="form-control" placeholder="Book ID">
+    </div>
+
+    <button class="btn btn-primary" (click)="findBookByID()">Find Book</button>
+
+    <div class="card mt-3" *ngIf="books">
+        <div class="card-body">
+            <h5 class="card-title">{{books.title}}</h5>
+            <p class="card-text">
+                <strong>Author:</strong> {{books.author}}<br>
+                <strong>ISBN:</strong> {{books.isbn}}<br>
+                <strong>Copies:</strong> {{books.copies}}<br>
+                <strong>Publication Date:</strong> {{books.publicationDate}}<br>
+                <strong>Publisher:</strong> {{books.publisher}}<br>
+                <strong>Category:</strong> {{books.category}}<br>
+                <strong>Genre:</strong> {{books.genre}}<br>
+                <strong>Sub-Genre:</strong> {{books.subgenre}}
+            </p>
+        </div>
+    </div>
+
+    <div class="alert alert-danger mt-3" *ngIf="errorMessage">
+        "error!!"
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<h1 class="fade-in" >{{title}}</h1>
+
+<h2 *ngIf="admins.length<1">No Data</h2>
+
+<div style= "margin: 20px; float:right">
+  <button class="button" (click)="addAdmins()"> Add Admin</button>
+</div>
+
+<table *ngIf="admins.length>0" class="center" >
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>USERNAME</th>
+      <th>PASSWORD</th>
+      <th>ACTIONS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let admin of admins">
+      <td>{{admin.id}}</td>
+      <td>{{admin.name}}</td>
+      <td>{{admin.username}}</td>
+      <td>{{admin.password}}</td>
+      <td>
+        <button class='smallButton' (click)="deleteAdmin(admin.id)">Delete</button>
+    </td>
+    </tr>
+  </tbody>  
+ </table>

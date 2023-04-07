@@ -1,0 +1,41 @@
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    float: left;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgb(193, 188, 188);
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 0.5px solid grey;
+  }
+
+  .sidenav {
+    background-image: url('https://d4804za1f1gw.cloudfront.net/wp-content/uploads/sites/50/2018/11/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0f0e0e;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
