@@ -13,6 +13,7 @@ import { LoanComponent } from './loan/loan.component';
 import { PublisherComponent } from './publisher/publisher.component';
 import { StudentComponent } from './student/student.component';
 import { FindBooksComponent } from './find-books/find-books.component';
+import { FindAdminComponent } from './find-admin/find-admin.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'find-books',
     component: FindBooksComponent,
+  },
+  {
+    path: 'find-admin',
+    component: FindAdminComponent,
   }
 ];
 

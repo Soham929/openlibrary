@@ -22,6 +22,12 @@ export class AdminComponent implements OnInit {
     this.router.navigateByUrl('/add-admins')
   }
 
+  findAdmin(){
+    console.log("findAdmin button clicked!!")
+    // Take user to /add-books url
+    this.router.navigateByUrl('/find-admin')
+  }
+
   fetchAllAdmins(){
     this.http.get('http://localhost:8080/admin/getAdmin')
     .subscribe(resp =>{

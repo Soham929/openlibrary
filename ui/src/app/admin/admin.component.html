@@ -6,6 +6,10 @@
   <button class="button" (click)="addAdmins()"> Add Admin</button>
 </div>
 
+<div style= "margin: 20px; float:right">
+  <button class="button" (click)="findAdmin()"> Find Admin</button>
+</div>
+
 <table *ngIf="admins.length>0" class="center" >
   <thead>
     <tr>

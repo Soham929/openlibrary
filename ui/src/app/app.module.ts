@@ -18,7 +18,8 @@ import { AddStudentsComponent } from './add-students/add-students.component';
 import { AddAuthorsComponent } from './add-authors/add-authors.component';
 import { AddPublishersComponent } from './add-publishers/add-publishers.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FindBooksComponent } from './find-books/find-books.component'
+import { FindBooksComponent } from './find-books/find-books.component';
+import { FindAdminComponent } from './find-admin/find-admin.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FindBooksComponent } from './find-books/find-books.component'
     AddStudentsComponent,
     AddAuthorsComponent,
     AddPublishersComponent,
-    FindBooksComponent
+    FindBooksComponent,
+    FindAdminComponent
   ],
   imports: [
     BrowserModule,

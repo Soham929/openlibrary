@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="form-group">
+        <h1 class="fade-in" >Enter Admin Name:</h1>
+        <input type="text" id="name" [(ngModel)]="name" class="form-control" placeholder="Admin Name">
+    </div>
+
+    <button class="btn btn-primary" (click)="findAdminByName()">Find Admin</button>
+
+    <div class="card mt-3" *ngIf="admin.length>0">
+        <div class="card-body">
+            <h5 class="card-title">{{admin.name}}</h5>
+            <p class="card-text">
+                <strong>ID:</strong> {{admin.id}}<br>
+                <strong>Name:</strong> {{admin.name}}<br>
+                <strong>Username:</strong> {{admin.username}}<br>
+                <strong>Password:</strong> {{admin.password}}<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="alert alert-danger mt-3" *ngIf="errorMessage">
+        "error!!"
+    </div>
+</div>
